@@ -39,13 +39,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (Integer.parseInt(User.getText().toString())==1017922915 && Integer.parseInt(Pin.getText().toString())==7777 && Integer.parseInt(Ip.getText().toString())==1091800518)
-                {
-                    enviarDatos(view);
-                }else
+                try {
+                    if (Integer.parseInt(User.getText().toString())==1017922915 && Integer.parseInt(Pin.getText().toString())==7777 && Integer.parseInt(Ip.getText().toString())==1091800518)
+                    {
+                        enviarDatos(view);
+                    }else
+                    {
+                        AlertDialog.Builder alerta = new AlertDialog.Builder(MainActivity.this);
+                        alerta.setMessage("Contraseña y/o usuario incorrecto")
+                                .setCancelable(false)
+                                .setPositiveButton("Intentar de nuevo", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        dialogInterface.cancel();
+                                    }
+                                });
+
+                        AlertDialog titulo = alerta.create();
+                        titulo.setTitle("Error");
+                        titulo.show();
+                    }
+
+                }catch (Exception e)
                 {
                     AlertDialog.Builder alerta = new AlertDialog.Builder(MainActivity.this);
-                    alerta.setMessage("Contraseña y/o usuario incorrecto")
+                    alerta.setMessage("Valores vacios")
                             .setCancelable(false)
                             .setPositiveButton("Intentar de nuevo", new DialogInterface.OnClickListener() {
                                 @Override
