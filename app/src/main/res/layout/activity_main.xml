@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <!--Titulo-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/welcome"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:padding="35dp"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+    </TextView>
+    <!--Fin Titulo-->
+
+
+    <!--user-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/user"
+            android:padding="25dp"
+            android:textAlignment="center"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+
+        </TextView>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/user"
+            android:textSize="25dp"
+            android:id="@+id/TxtUser">
+
+        </EditText>
+
+
+    </LinearLayout>
+    <!--fin user-->
+
+    <!--pin-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/pin"
+            android:padding="25dp"
+            android:textAlignment="center"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            >
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/pin"
+            android:textSize="25dp"
+            android:id="@+id/TxtPin">
+
+        </EditText>
+    </LinearLayout>
+    <!--fin pin-->
+
+    <!--Logeo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/login"
+            android:background="@color/white"
+            android:id="@+id/BtnLogueo"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+        </Button>
+
+    </LinearLayout>
+    <!--FIN Logeo-->
+
+
+
+</LinearLayout>
+  
