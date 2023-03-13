@@ -13,7 +13,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button logueo,Suport;
+    Button logueo,Suport,leave;
 
     String pNumberSop = "3127848025";
 
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         logueo = findViewById(R.id.BtnLogueo);
         Ip = findViewById(R.id.TxtIp);
         Suport = findViewById(R.id.BtnSopor);
+        leave = findViewById(R.id.BtnC);
     }
 
     @Override
@@ -64,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 irALlamar(view);
+            }
+        });
+
+        leave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 

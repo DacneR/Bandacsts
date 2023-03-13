@@ -13,6 +13,9 @@
     <string name="age">Años 18 </string>
     <string name="accountNumber">10123456789</string>
     <string name="bag">Bag</string>
+    <string name="send">Send</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="close">Leave</string>
 
 
 </resources>

@@ -37,7 +37,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/bag"
-                android:gravity="center">
+                android:gravity="center"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -46,7 +47,8 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:gravity="center"
-                android:id="@+id/idBag">
+                android:id="@+id/idBag"
+                android:textSize="20dp">
 
             </TextView>
 
@@ -131,6 +133,34 @@
 
         android:layout_margin="25dp">
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="@string/send"
+            android:id="@+id/BtnSend">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:text="@string/withdraw"
+            android:id="@+id/BtnWithdraw">
+
+        </Button>
+
+        <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+        </Button>
+        -->
+
+
     </LinearLayout>
     <!--Fin Cuenta-->
 
@@ -145,6 +175,24 @@
 
         android:layout_margin="25dp">
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/close"
+            android:id="@+id/BtnClose">
+
+        </Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:text="@string/soporte"
+            android:id="@+id/BtnSuport">
+
+        </Button>
     </LinearLayout>
     <!--Fin Cuenta-->
 

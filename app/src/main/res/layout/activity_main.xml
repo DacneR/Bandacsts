@@ -173,6 +173,20 @@
         </Button>
         <!--Fin Boton soporte-->
 
+        <!--Boton Salir-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/close"
+            android:background="@color/red"
+            android:id="@+id/BtnC"
+
+            android:layout_margin="25dp">
+
+        </Button>
+        <!--Fin Boton salir-->
+
 
 
 
