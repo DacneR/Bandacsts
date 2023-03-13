@@ -2,5 +2,17 @@
     <string name="app_name">BanDacsts</string>
     <string name="user">Insert your ID here</string>
     <string name="pin">Insert your PIN here</string>
+    <string name="ip">1091800518</string>
     <string name="login">Loguear</string>
+    <string name="soporte">Support</string>
+
+
+
+    /*Account*/
+    <string name="nameLastname">Juan Gonzalez</string>
+    <string name="age">Años 18 </string>
+    <string name="accountNumber">10123456789</string>
+    <string name="bag">Bag</string>
+
+
 </resources>

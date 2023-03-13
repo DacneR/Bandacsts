@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:layout_weight="0.1"
         android:background="@drawable/welcome"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textAlignment="center"
         android:padding="35dp"
 
@@ -55,7 +55,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/user"
-            android:textSize="25dp"
+            android:textSize="25sp"
+            android:inputType="number"
             android:id="@+id/TxtUser">
 
         </EditText>
@@ -92,32 +93,89 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/pin"
-            android:textSize="25dp"
+            android:inputType="number"
+            android:textSize="25sp"
             android:id="@+id/TxtPin">
 
         </EditText>
     </LinearLayout>
     <!--fin pin-->
 
+    <!--ip-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ip"
+            android:padding="25dp"
+            android:textAlignment="center"
+
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            >
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ip"
+            android:inputType="number"
+            android:textSize="25sp"
+            android:id="@+id/TxtIp">
+
+        </EditText>
+
+    </LinearLayout>
+    <!--fin ip-->
+
     <!--Logeo-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5">
+        android:layout_weight="0.5"
+        android:orientation="vertical">
 
+        <!--Boton logueo-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="@string/login"
-            android:background="@color/white"
+            android:background="@color/red"
             android:id="@+id/BtnLogueo"
 
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp">
+            android:layout_margin="25dp">
 
         </Button>
+        <!--Fin Boton logueo-->
+
+        <!--Boton soporte-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/soporte"
+            android:background="@color/red"
+            android:id="@+id/BtnSopor"
+
+            android:layout_margin="25dp">
+
+        </Button>
+        <!--Fin Boton soporte-->
+
+
+
+
 
     </LinearLayout>
     <!--FIN Logeo-->
